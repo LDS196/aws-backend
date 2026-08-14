@@ -1,0 +1,3 @@
+creation_rules:
+  - path_regex: helm/.*/secrets.*\.yaml$
+    age: age1cletq4h7lntlu2eclkf37pe4uk68lngu40kp43mnqql8d4xh9vhqdrrdjx

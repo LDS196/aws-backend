@@ -1,0 +1,28 @@
+image:
+  name: 874733548478.dkr.ecr.eu-central-1.amazonaws.com/devops-backend-api:latest
+
+backend:
+  port: 3000
+
+resources:
+  requests:
+    cpu: "60m"
+    memory: "100Mi"
+  limits:
+    cpu: "100m"
+    memory: "120Mi"
+
+config:
+  NODE_ENV: "production"
+
+
+ingress:
+  host: api-aws.it-kamasutra.com
+  tlsSecret: backend-api-tls
+  clusterIssuer: letsencrypt-prod
+
+hpa:
+  minReplicas: 1
+  maxReplicas: 5
+  cpuUtilization: 70
+  memoryUtilization: 80
