@@ -1,7 +1,7 @@
 image:
   name: 114794478644.dkr.ecr.eu-central-1.amazonaws.com/devops-backend-api:latest
 backend:
-  port: 4545
+  port: 3000
 
 resources:
   requests:
