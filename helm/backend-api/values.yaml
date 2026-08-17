@@ -1,8 +1,7 @@
 image:
-  name: 874733548478.dkr.ecr.eu-central-1.amazonaws.com/devops-backend-api:latest
-
+  name: 114794478644.dkr.ecr.eu-central-1.amazonaws.com/devops-backend-api:latest
 backend:
-  port: 3000
+  port: 4545
 
 resources:
   requests:
@@ -17,7 +16,7 @@ config:
 
 
 ingress:
-  host: api-aws.it-kamasutra.com
+  host: api-aws.lds196.ru
   tlsSecret: backend-api-tls
   clusterIssuer: letsencrypt-prod
 
