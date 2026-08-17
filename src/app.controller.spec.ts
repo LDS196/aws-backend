@@ -20,7 +20,7 @@ describe('AppController', () => {
       if (process.version.startsWith('v25')) {
         throw new Error('Node < 25!!');
       }
-      expect(appController.getHello()).toBe('Hello DevOps v5.0');
+      expect(appController.getHello()).toBe('Hello DevOps v5.1');
     });
   });
 });
